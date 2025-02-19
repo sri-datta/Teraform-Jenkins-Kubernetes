@@ -7,3 +7,8 @@ variable "public_subnets" {
   description = "List of public subnet CIDR blocks"
   default     = ["10.0.1.0/24"]
 }
+variable "instance_type" {
+  description = "Instance Type"
+  type        = string
+  default     = "t2.micro"
+}
